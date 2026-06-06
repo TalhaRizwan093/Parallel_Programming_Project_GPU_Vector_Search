@@ -1,0 +1,62 @@
+# --- Datasets and large generated artefacts (never commit these) ---
+data/
+*.bin
+*.npy
+*.npz
+*.parquet
+*.faiss
+*.codes
+
+# --- Build artefacts ---
+build/
+*.o
+*.so
+*.dylib
+*.dll
+*.lib
+*.exe
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# --- Profiling reports ---
+reports/*.ncu-rep
+reports/*.qdrep
+reports/*.nsys-rep
+reports/*.sqlite
+
+# But DO keep the report PDF + plots in the repo
+!reports/report.pdf
+!reports/*.png
+!reports/*.svg
+!reports/*.csv
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+.venv/
+venv/
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# --- IDE / OS ---
+.vscode/launch.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- HF cache (don't accidentally commit cached models) ---
+.cache/
+~/.cache/huggingface/
