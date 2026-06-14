@@ -55,14 +55,6 @@ pytest tests/test_recall.py              # full suite
 python3 demo/ui.py                       # then open http://localhost:5000
 ```
 
-## Regenerate report figures and document
-
-```bash
-python3 bench/report_plots.py
-python3 bench/roofline.py
-python3 bench/build_word_report.py       # writes reports/Final_Report.docx
-```
-
 ## Docker
 
 ```bash
@@ -75,7 +67,6 @@ docker run --rm -it --gpus all -v $(pwd):/workspace gpu-search bash
 ```
 engine/      CUDA kernels (v1 naive, v2 coalesced, v3 product quantised) and the driver
 tools/       data pipeline (embed, quantise, CPU reference, FAISS baseline, UMAP)
-bench/       plot and report generators
 scripts/     setup and reproduction scripts
 tests/       recall verification against a CPU reference
 demo/        Flask search UI
