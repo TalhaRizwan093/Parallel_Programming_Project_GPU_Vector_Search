@@ -1,6 +1,6 @@
 # GPU Vector Search Engine
 
-A from scratch CUDA k nearest neighbour search engine over 1 million Wikipedia paragraph embeddings. Three hand written kernels (naive, coalesced, product quantised) benchmarked against FAISS. Full write up is in `reports/Final_Report.docx`.
+A from scratch CUDA k nearest neighbour search engine over 1 million Wikipedia paragraph embeddings. Three hand written kernels (naive, coalesced, product quantised) benchmarked against FAISS. The full write up is delivered separately as the project report.
 
 ## Prerequisites
 
@@ -70,5 +70,4 @@ tools/       data pipeline (embed, quantise, CPU reference, FAISS baseline, UMAP
 scripts/     setup and reproduction scripts
 tests/       recall verification against a CPU reference
 demo/        Flask search UI
-reports/     final report, figures, and benchmark CSVs
 ```

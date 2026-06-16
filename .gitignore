@@ -20,17 +20,9 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 
-# --- Profiling reports ---
-reports/*.ncu-rep
-reports/*.qdrep
-reports/*.nsys-rep
-reports/*.sqlite
-
-# But DO keep the report PDF + plots in the repo
-!reports/report.pdf
-!reports/*.png
-!reports/*.svg
-!reports/*.csv
+# --- Generated reports (figures, CSVs, profiling output). The final
+#     report is delivered separately and lives outside this repo. ---
+reports/
 
 # --- Python ---
 __pycache__/
